@@ -35,7 +35,8 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(OnehandControllerVN OnehandControllerVN.c )
+add_executable(OnehandControllerVN OnehandControllerVN.cpp)
+add_executable(Firmware classes/Firmware.cpp)
 
 pico_set_program_name(OnehandControllerVN "OnehandControllerVN")
 pico_set_program_version(OnehandControllerVN "0.1")
