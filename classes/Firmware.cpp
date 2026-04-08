@@ -1,6 +1,6 @@
 #include "Firmware.hpp"
-#include "pico/stdlib.h"
-#include "pico/cyw43_arch.h"
+#include <pico/stdlib.h>
+#include <pico/cyw43_arch.h>
 
 Firmware::Firmware() {
     // Inits SERIAL
