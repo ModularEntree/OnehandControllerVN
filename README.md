@@ -1,21 +1,24 @@
 # Onehand controller
 
-Controller for onehand only, meant for playing VNs or few input games
+Controller for onehand only, meant for playing VNs or few input games. 
 
+## HW info
 Design is not yet really implemented, but for build, needed parts are:
 - Raspberry Pi Pico W (Main controller)
 - Seeed XIAO nRF52840 (Dongle)
-- N buttons (probable number is 4 for action buttons, 2 for triggers, turn-off and BT button = 8?)
-- Reset hole? Idk how to implement that
+- N buttons (probable number is 4 for action buttons, 2 for triggers, turn-off, special button, reset button, BT button = 10?)
 - Vibrate motor?
 - 3D printed shell for dongle and controller
     - It is expected to have Logitech mouse-like dummy port (where to put dongle when its not used)
     - VR controller like holding
     - It will, probably, have pretty falic (:gachi:) shape
+    - Speaker holes and hole for reset button
 - Battery shell
 - Status LED, probably RGB one
+- Speaker? It would be cool
 - And many wires
 
+## SW info
 For software, following features are expected:
 - Two connection modes, Dongle (primary) and BT (secondary)
 - For BT mode, you will need to switch it to BT mode by pressing pairing button
@@ -23,6 +26,7 @@ For software, following features are expected:
 - When turned on, it will try to establish private link between himself and dongle
 - Dongle, when is in PC, it will behave as controller
 - It will have bindable buttons or prebinded ones, i am more fan of the first one
+- It will have speaker same as normal controller
 - It will show status through LED:
     - BLUE is BT
     - blinking BLUE is pairing BT mode
