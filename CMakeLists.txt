@@ -39,7 +39,8 @@ file(GLOB_RECURSE app_src CONFIGURE_DEPENDS
     "${CMAKE_SOURCE_DIRECTORY}/classes/*.c"
 )
 
-add_executable(OnehandControllerVN OnehandControllerVN.cpp ${app_src})
+add_executable(OnehandControllerVN OnehandControllerVN.cpp ${app_src}
+        classes/Firmware.cpp)
 
 pico_set_program_name(OnehandControllerVN "OnehandControllerVN")
 pico_set_program_version(OnehandControllerVN "0.1")
@@ -64,6 +65,6 @@ target_link_libraries(OnehandControllerVN
 
 pico_add_extra_outputs(OnehandControllerVN)
 
-add_target_compile_option(
-    OnehandControllerVN -wExtra -wPedantic -wError
+add_compile_options(
+     -wExtra -wPedantic -wError
 )
