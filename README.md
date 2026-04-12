@@ -6,7 +6,13 @@ Controller for onehand only, meant for playing VNs or few input games.
 Design is not yet really implemented, but for build, needed parts are:
 - Raspberry Pi Pico W (Main controller)
 - Seeed XIAO nRF52840 (Dongle)
-- N buttons (probable number is 4 for action buttons, 2 for triggers, turn-off, special button, reset button, BT button = 10?)
+- N buttons = 10?
+    - 4 for action buttons
+    - 2 for triggers
+    - turn-off
+    - special button
+    - reset button
+    - BT button 
 - Vibrate motor?
 - 3D printed shell for dongle and controller
     - It is expected to have Logitech mouse-like dummy port (where to put dongle when its not used)
